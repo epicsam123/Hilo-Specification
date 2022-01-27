@@ -1,11 +1,13 @@
 # Hilo-Specification
 First team activity (team 7) 
 
+Names: Charlie Mitts, James Chan, Spencer Kingsbury, Samuel Casellas
+
 # Code Planning
 There are two classes for this program:
 
-1. The director
-2. A card
+1. Director
+2. Dealer
 
 The following responsibilities, behaviors, and statuses are as follows:
 
