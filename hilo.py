@@ -37,7 +37,7 @@ class Director:
         if (int(self.card)>int(self.next_card) and self.guess.lower() == "h") or (int(self.card)<int(self.next_card) and self.guess.lower() == "l"):
             self.score -=75
         elif (int(self.card)==int(self.next_card)):
-            self.score +=0
+            self.score -=75
         else:
             self.score+=100
     def display_new_card(self):
