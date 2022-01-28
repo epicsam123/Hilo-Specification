@@ -1,7 +1,8 @@
 # Hilo-Specification
 First team activity (team 7) 
 
-Names: Charlie Mitts, James Chan, Spencer Kingsbury, Samuel Casellas
+Names: Charlie Mitts mit18012@byui.edu, James Chan cha20009@byui.edu, Spencer Kingsbury kin20013@byui.edu, Samuel Casellas cas18010@byui.edu
+
 
 Date: Jan 27th, 2022
 
@@ -43,3 +44,7 @@ The following responsibilities, behaviors, and statuses are as follows:
 3. Status:
     a. Lower range for pulling cards - self.lower_range (int)
     b. Upper range for pulling cards - self.upper_range (int)
+    
+# Required software
+- Python compiler (after 3.7 preferred)
+- Your preferred IDE
