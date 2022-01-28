@@ -3,7 +3,10 @@ First team activity (team 7)
 
 Names: Charlie Mitts, James Chan, Spencer Kingsbury, Samuel Casellas
 
+Date: Jan 27th, 2022
+
 # Code Planning
+
 There are two classes for this program:
 
 1. Director
@@ -12,30 +15,31 @@ There are two classes for this program:
 The following responsibilities, behaviors, and statuses are as follows:
 
 - Director:
-1. Responsibilities - Run the game by verifying the conditions of the game are always true before each turn. Keeps track of player's points and cards, and asks the user two questions: if they want another move or what their guess is for the card (whether higher or lower)
+1. Responsibilities - Run the game by verifying the conditions of the game are always true before each turn. Keeps track of the players cards and score. Asks the user two questions: if they want another turn and what their guess is for the card (whether higher or lower).
 
 2. Behaviors:
-    a. Check the points of the player to make sure it is not lower than 0: Points_Below_Zero()
-    b. Display the card: Display_Card()
-    c. Ask the player for higher or lower: Ask_Higher_Lower()
-    d. Display the next card: Display_Card()
-    e. Add or subtract points: Point_Adjust()
-    f. Ask the player to play again: Play_Again()
-    g. Run the program: main()
+    a. Initiate the game (main): start_game()
+    b. Display the card: print_initials()
+    c. Ask the player for higher or lower: guess_card()
+    d. Add or subtract points: score_updates()
+    e. Display the next card: display_new_card() 
+    f. Display and test user's score: do_outputs()
+    g. Ask the player to play again: done()
 
 3. Status:
-    a. Player's points - playerPoints (int)
-    b. Player's guess - playerGuess (str)
-    c. Player's choice to continue - continue (str)
-    d. Player's name - name (str)
+    a. Dealer - self.dealer (class)
+    a. Player's guess - self.guess (str)
+    b. Current card - self.current_card (int)
+    c. Next card - self.next_card (int)
+    d. Playing? - self.is_playing (bool)
+    e. Player's points - dealer.score (int)
 
-
-
-- Card:
-1. Responsibilities - A card to represent a number between 1 and 13
+- Dealer:
+1. Responsibilities - Deals a card to represent a number between 1 and 13.
 
 2. Behavior's:
-    a. Possess a number - Dealt_Number()
+    a. Retrieve the new card - return_new_card()
 
 3. Status:
-    a. Number on card
+    a. Lower range for pulling cards - self.lower_range (int)
+    b. Upper range for pulling cards - self.upper_range (int)
